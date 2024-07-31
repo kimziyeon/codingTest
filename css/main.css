@@ -29,6 +29,7 @@ header .gnb .gnb_center {
     align-items: center;
     justify-content: space-between;
     flex-grow: 1;
+
 }
 
 header .gnb .gnb_center .ch_search {
