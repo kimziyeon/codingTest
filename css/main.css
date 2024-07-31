@@ -1,0 +1,90 @@
+@charset "UTF-8";
+@import url(../css/reset.css);
+
+.inner {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+
+header {
+    width: 100%;
+}
+
+
+header .gnb {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    gap: 20px;
+}
+
+header .gnb .logo {}
+
+header .gnb .gnb_center {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+header .gnb .gnb_center .ch_search {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+header .gnb .gnb_center .ch_search #input {
+    width: 440px;
+    height: 40px;
+    border: 1px solid #D7E0F0;
+}
+
+header .gnb .gnb_center .ch_search img {
+    position: absolute;
+    right: 10px;
+}
+
+
+
+
+header .gnb .gnb_center .ch_board {
+    font-size: 17px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+}
+
+header .gnb .gnb_center .ch_board .ch_board_01 {
+    display: flex;
+    align-items: center;
+    color: #2EA1D0;
+}
+
+header .gnb .gnb_center .ch_board .ch_board_02 {}
+
+
+
+header .gnb .gnb_sub {}
+
+header .gnb .gnb_sub a {
+    color: #9DA2A6;
+}
+
+
+header .lnb {
+    width: 100%;
+    background-color: #0D2639;
+    font-size: 15px;
+    padding: 15px 0;
+
+}
+
+header .lnb a {
+    color: #fff;
+    margin-right: 20px;
+}
