@@ -17,7 +17,7 @@ fetch('./data/data.json')
                         <img src=${obj.img} alt="채널 이미지" class="img_hexagon">
 
                         <div class="bookmark">
-                            <img src="${obj.bookmark == true ? './images/bookmark_on.png' : './images/bookmark_off.png'}" alt="북마크 ON 아이콘">
+                            <img src="${obj.bookmark == true ? '/images/bookmark_on.png' : '/images/bookmark_off.png'}" alt="북마크 ON 아이콘">
                         </div>
                     </div>
                     <p class="ch_name">${obj.name}</p>
@@ -32,7 +32,7 @@ fetch('./data/data.json')
             <div class="img_box">
                 <div class="img_border_back"></div>
                 <div class="img_border"></div>
-                <img src='./images/plus.png' alt="채널 추가" class="img_hexagon">
+                <img src='/images/plus.png' alt="채널 추가" class="img_hexagon">
             </div>
         </div>
     `;
