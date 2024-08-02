@@ -38,5 +38,17 @@ fetch(`${basePath}/data/data.json`)
         </div>
     `;
 
+        const rateChList = jsonData.rateChList;
+        const rateChListEls = document.querySelector('.rate .rate_ch_list')
+
+        console.log('Loaded JSON data:', rateChList); // JSON 데이터 확인
+
     })
     .catch(error => console.error('Error:', error));
+
+
+
+// ratechList.forEach(obj => {
+//     console.log(`id: ${obj.id}, name: ${obj.name}, img: ${obj.img}`);
+// })
+
