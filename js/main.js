@@ -1,6 +1,6 @@
-// console.log('aaaaa')
+// const basePath = '/codingTest';
 
-fetch('./data/data.json')
+fetch('/data/data.json')
     .then(response => response.json())
     .then(jsonData => {
         // for 문으로 데이터 반복 처리
