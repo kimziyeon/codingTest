@@ -4,97 +4,97 @@
             "id": 0,
             "name": "장삐쭈",
             "bookmark": true,
-            "img": "/images/ch_img01.png"
+            "img": "./images/ch_img01.png"
         },
         {
             "id": 1,
             "name": "초승달",
             "bookmark": true,
-            "img": "/images/ch_img02.png"
+            "img": "./images/ch_img02.png"
         },
         {
             "id": 2,
             "name": "풍월량",
             "bookmark": false,
-            "img": "/images/ch_img03.png"
+            "img": "./images/ch_img03.png"
         },
         {
             "id": 3,
             "name": "선바",
             "bookmark": false,
-            "img": "/images/ch_img04.png"
+            "img": "./images/ch_img04.png"
         },
         {
             "id": 4,
             "name": "엔조이커플",
             "bookmark": false,
-            "img": "/images/ch_img05.png"
+            "img": "./images/ch_img05.png"
         },
         {
             "id": 5,
             "name": "도티",
             "bookmark": false,
-            "img": "/images/ch_img06.png"
+            "img": "./images/ch_img06.png"
         },
         {
             "id": 6,
             "name": "엔조이커플",
             "bookmark": false,
-            "img": "/images/ch_img07.png"
+            "img": "./images/ch_img07.png"
         },
         {
             "id": 7,
             "name": "떵개떵",
             "bookmark": false,
-            "img": "/images/ch_img08.png"
+            "img": "./images/ch_img08.png"
         },
         {
             "id": 8,
             "name": "장삐쭈",
             "bookmark": true,
-            "img": "/images/ch_img01.png"
+            "img": "./images/ch_img01.png"
         },
         {
             "id": 9,
             "name": "초승달",
             "bookmark": true,
-            "img": "/images/ch_img02.png"
+            "img": "./images/ch_img02.png"
         },
         {
             "id": 10,
             "name": "풍월량",
             "bookmark": false,
-            "img": "/images/ch_img03.png"
+            "img": "./images/ch_img03.png"
         },
         {
             "id": 11,
             "name": "선바",
             "bookmark": false,
-            "img": "/images/ch_img04.png"
+            "img": "./images/ch_img04.png"
         },
         {
             "id": 12,
             "name": "엔조이커플",
             "bookmark": false,
-            "img": "/images/ch_img05.png"
+            "img": "./images/ch_img05.png"
         },
         {
             "id": 13,
             "name": "도티",
             "bookmark": false,
-            "img": "/images/ch_img06.png"
+            "img": "./images/ch_img06.png"
         },
         {
             "id": 14,
             "name": "엔조이커플",
             "bookmark": false,
-            "img": "/images/ch_img07.png"
+            "img": "./images/ch_img07.png"
         },
         {
             "id": 15,
             "name": "떵개떵",
             "bookmark": false,
-            "img": "/images/ch_img08.png"
+            "img": "./images/ch_img08.png"
         }
     ]
 }
