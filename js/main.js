@@ -1,5 +1,6 @@
 const basePath = window.location.hostname === 'http://172.30.1.78:5500/' ? '' : 'https://kimziyeon.github.io/codingTest/';
 
+//json "chList" 패치첫번째
 
 fetch(`${basePath}/data/data.json`)
     .then(response => response.json())
@@ -38,17 +39,44 @@ fetch(`${basePath}/data/data.json`)
         </div>
     `;
 
-        const rateChList = jsonData.rateChList;
-        const rateChListEls = document.querySelector('.rate .rate_ch_list')
-
-        console.log('Loaded JSON data:', rateChList); // JSON 데이터 확인
 
     })
     .catch(error => console.error('Error:', error));
 
 
 
-// ratechList.forEach(obj => {
-//     console.log(`id: ${obj.id}, name: ${obj.name}, img: ${obj.img}`);
-// })
+
+//json "rateChList" 패치두번째
+
+fetch(`${basePath}/data/data.json`)
+    .then(response => response.json())
+    .then(jsonData => {
+
+        const rateChList = jsonData.rateChList;
+        const rateChListEls = document.querySelector('.rate .rate_ch_list');
+
+        rateChList.forEach(obj => {
+            rateChListEls.innerHTML += `
+                <div class="ch_box">
+                    <div class="img_box">
+                        <div class="img_border_back"></div>
+                        <div class="img_border aqua"></div>
+                        <img src="${basePath}/images/${obj.img}" alt="채널 이미지" class="img_hexagon">
+                    </div>
+
+                    <div class="percent_badge">
+                        <div class="num">50</div>
+                        <div class="per">%</div>
+                    </div>
+                    <p class="ch_name">${obj.name}</p>
+                    <p class="ch_follower">구독자 <span>238만명</span></p>
+                </div>
+            `
+        })
+
+    })
+    .catch(error => console.error('Error:', error));
+
+
+
 
