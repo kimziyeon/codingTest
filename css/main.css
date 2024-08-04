@@ -538,7 +538,11 @@ header .lnb a {
     margin-top: 5px;
 }
 
-.video .video_list .video_box .video_info .view_num {}
+.video .video_list .video_box .video_info .view_num {
+    display: inline-block;
+}
+
+.video .video_list .video_box .video_info .view_num>span {}
 
 .video .video_list .video_box .video_info .dot {
     color: #D6DEE6;

@@ -102,42 +102,49 @@
             "id": 0,
             "name": "입짧은 햇님",
             "bookmark": true,
+            "followerNum": "239만",
             "img": "ch_img09.png"
         },
         {
             "id": 1,
             "name": "쯔양",
             "bookmark": true,
+            "followerNum": "238만",
             "img": "ch_img10.png"
         },
         {
             "id": 2,
             "name": "밴쯔",
             "bookmark": true,
+            "followerNum": "238만",
             "img": "ch_img11.png"
         },
         {
             "id": 3,
             "name": "공대생 변승주",
             "bookmark": true,
+            "followerNum": "238만",
             "img": "ch_img12.png"
         },
         {
             "id": 4,
             "name": "햄찌",
             "bookmark": true,
+            "followerNum": "238만",
             "img": "ch_img13.png"
         },
         {
             "id": 5,
             "name": "밴쯔",
             "bookmark": true,
+            "followerNum": "238만",
             "img": "ch_img11.png"
         },
         {
             "id": 6,
             "name": "입짧은 햇님",
             "bookmark": true,
+            "followerNum": "238만",
             "img": "ch_img09.png"
         }
     ],

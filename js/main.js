@@ -1,6 +1,7 @@
 const basePath = window.location.hostname === 'http://172.30.1.78:5500/' ? '' : 'https://kimziyeon.github.io/codingTest/';
 
-//json "chList" 패치첫번째
+
+//json "ch_list" 첫번째 패치
 
 fetch(`${basePath}/data/data.json`)
     .then(response => response.json())
@@ -46,7 +47,7 @@ fetch(`${basePath}/data/data.json`)
 
 
 
-//json "rateChList" 패치두번째
+//json "rate_ch_list" 두번째 패치
 
 fetch(`${basePath}/data/data.json`)
     .then(response => response.json())
@@ -69,7 +70,7 @@ fetch(`${basePath}/data/data.json`)
                         <div class="per">%</div>
                     </div>
                     <p class="ch_name">${obj.name}</p>
-                    <p class="ch_follower">구독자 <span>238만명</span></p>
+                    <p class="ch_follower">구독자 <span>${obj.followerNum}</span>명</p>
                 </div>
             `
         })
@@ -80,3 +81,34 @@ fetch(`${basePath}/data/data.json`)
 
 
 
+//json "video_list" 세번째 패치
+
+fetch(`${basePath}/data/data.json`)
+    .then(response => response.json())
+    .then(jsonData => {
+
+
+        const videoList = jsonData.videoList;
+        const videoListEls = document.querySelector('.video .video_list');
+
+        videoList.forEach(obj => {
+
+            videoListEls.innerHTML += `
+                <div class="video_box">
+                    <div class="thumb">
+                        <img src="/images/video_thumb01.png" alt="비디오 썸네일 이미지">
+                    </div>
+                    <div class="ch_name">${obj.name}</div>
+                    <div class="video_name">${obj.videoName}</div>
+                    <div class="video_info">
+                        <p class="view_num">조회수 <span>${obj.viewNum}</span>회</p>
+                        <span class="dot">&middot;</span>
+                        <span class="up_date">${obj.upDate}</span>
+                    </div>
+                </div>
+
+            `
+        })
+
+    })
+    .catch(error => console.error('Error:', error));
