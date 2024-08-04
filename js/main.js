@@ -96,7 +96,7 @@ fetch(`${basePath}/data/data.json`)
             videoListEls.innerHTML += `
                 <div class="video_box">
                     <div class="thumb">
-                        <img src="/images/video_thumb01.png" alt="비디오 썸네일 이미지">
+                        <img src="${basePath}/images/${obj.videoImg}" alt="비디오 썸네일 이미지">
                     </div>
                     <div class="ch_name">${obj.name}</div>
                     <div class="video_name">${obj.videoName}</div>

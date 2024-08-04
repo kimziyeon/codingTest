@@ -102,7 +102,7 @@
             "id": 0,
             "name": "입짧은 햇님",
             "bookmark": true,
-            "followerNum": "239만",
+            "followerNum": "238만",
             "img": "ch_img09.png"
         },
         {
@@ -155,7 +155,7 @@
             "videoName": "[만약에🤔] 무조건 계획대로만 인생을 산다면 ⏰🕹️",
             "viewNum": "139만",
             "upDate": "2021-08-09",
-            "img": "video_thumb01.png"
+            "videoImg": "video_thumb01.png"
         },
         {
             "id": 1,
@@ -163,7 +163,7 @@
             "videoName": "민트초코로 호들갑 떠는 게 싫다고 했던 사람",
             "viewNum": "40만",
             "upDate": "2021-08-09",
-            "img": "video_thumb02.png"
+            "videoImg": "video_thumb02.png"
         },
         {
             "id": 2,
@@ -171,7 +171,7 @@
             "videoName": "BTS (방탄소년단) Intro: Persona + 상남자(Boy In Luv)",
             "viewNum": "2540만",
             "upDate": "2021-08-09",
-            "img": "video_thumb03.png"
+            "videoImg": "video_thumb03.png"
         },
         {
             "id": 3,
@@ -179,7 +179,7 @@
             "videoName": "세 명인데 피자 한 판만 시켜버림",
             "viewNum": "40만",
             "upDate": "2021-08-09",
-            "img": "video_thumb04.png"
+            "videoImg": "video_thumb04.png"
         },
         {
             "id": 4,
@@ -187,7 +187,7 @@
             "videoName": "침펄풍, 웹툰작가 자존심이 걸린 그림 대결 - 쿵야 캐치마인드",
             "viewNum": "139만",
             "upDate": "2021-08-09",
-            "img": "video_thumb05.png"
+            "videoImg": "video_thumb05.png"
         }
     ]
 }
