@@ -114,6 +114,23 @@ fetch(`${basePath}/data/data.json`)
 
 
 
+//json "shorts_list" 네번째 패치
+
+fetch(`${basePath}/data/data.json`)
+    .then(response => response.json())
+    .then(jsonData => {
+
+        const shortsList = jsonData.shortsList;
+        const shortsListEls = document.querySelector('.video .shorts_list');
+        shortsList.forEach(obj => {
+            console.log(`id: ${obj.id}, name: ${obj.name}, img: ${obj.img}`);
+
+        })
+
+    })
+    .catch(error => console.error('Error:', error));
+
+
 
 // 더보기
 const moreBtn = document.querySelector('.more_box');

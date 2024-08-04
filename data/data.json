@@ -229,5 +229,37 @@
             "upDate": "2021-08-09",
             "videoImg": "video_thumb05.png"
         }
+    ],
+    "shortsList": [
+        {
+            "id": 0,
+            "name": "SBS NEWS",
+            "videoName": "'울지 마 삐약아' 아쉬움에 눈물이 고이는 신유빈",
+            "videoImg": "shorts_thumb01.jpeg"
+        },
+        {
+            "id": 1,
+            "name": "KBS NEWS",
+            "videoName": "안바울이 만들어낸 단체 동메달…'금메달보다 더 값진 동메달!' 모두 울컥",
+            "videoImg": "shorts_thumb02.jpeg"
+        },
+        {
+            "id": 2,
+            "name": "KBS NEWS",
+            "videoName": "올림픽 역사상 최고 성적인 은메달을 완성하는 대한민국 대표팀",
+            "videoImg": "shorts_thumb03.jpeg"
+        },
+        {
+            "id": 3,
+            "name": "MBC NEWS",
+            "videoName": "시원하게 꽂힌 '금빛 화살'...대한민국 여자 양궁 단체 금메달",
+            "videoImg": "shorts_thumb04.jpeg"
+        },
+        {
+            "id": 4,
+            "name": "MBC NEWS",
+            "videoName": "2024 파리올림픽 배드민턴 여자 단식 8강ㅣ안세영",
+            "videoImg": "shorts_thumb05.jpeg"
+        }
     ]
 }
