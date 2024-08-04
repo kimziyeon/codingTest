@@ -92,7 +92,6 @@ fetch(`${basePath}/data/data.json`)
         const videoListEls = document.querySelector('.video .video_list');
 
         videoList.forEach(obj => {
-
             videoListEls.innerHTML += `
                 <div class="video_box">
                     <div class="thumb">
@@ -122,8 +121,16 @@ fetch(`${basePath}/data/data.json`)
 
         const shortsList = jsonData.shortsList;
         const shortsListEls = document.querySelector('.video .shorts_list');
+
         shortsList.forEach(obj => {
-            console.log(`id: ${obj.id}, name: ${obj.name}, img: ${obj.videoImg}`);
+            shortsListEls.innerHTML += `
+                <div class="shorts_box">
+                    <div class="shorts_thumb">
+                        <img src="${basePath}/images/${obj.shortsImg}" alt="쇼츠 썸네일 이미지">
+                    </div>
+                    <div class="shorts_name">${obj.shortsName}</div>
+                </div>
+            `
 
         })
 
