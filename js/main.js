@@ -106,9 +106,19 @@ fetch(`${basePath}/data/data.json`)
                         <span class="up_date">${obj.upDate}</span>
                     </div>
                 </div>
-
             `
         })
 
     })
     .catch(error => console.error('Error:', error));
+
+
+
+
+// 더보기
+const moreBtn = document.querySelector('.more_box');
+moreBtn.addEventListener('click', () => {
+    let hideSection = document.querySelector('.hide');
+    hideSection.style.display = 'block'
+})
+

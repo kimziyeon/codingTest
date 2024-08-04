@@ -554,6 +554,17 @@ header .lnb a {
 
 
 
+.video.shorts {
+    margin-top: 0;
+}
+
+.hide {
+    display: none;
+}
+
+
+
+
 /* more more more more more more more more more more more */
 
 .more {
