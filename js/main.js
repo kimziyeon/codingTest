@@ -123,7 +123,7 @@ fetch(`${basePath}/data/data.json`)
         const shortsList = jsonData.shortsList;
         const shortsListEls = document.querySelector('.video .shorts_list');
         shortsList.forEach(obj => {
-            console.log(`id: ${obj.id}, name: ${obj.name}, img: ${obj.img}`);
+            console.log(`id: ${obj.id}, name: ${obj.name}, img: ${obj.videoImg}`);
 
         })
 
