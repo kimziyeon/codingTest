@@ -146,3 +146,13 @@ moreBtn.addEventListener('click', () => {
     hideSection.style.display = 'block'
 })
 
+
+//헤더 스크롤 shadow
+window.addEventListener('scroll', () => {
+    const category = document.querySelector('.category');
+    if (window.scrollY > 0) {
+        category.classList.add('shadow')
+    } else {
+        category.classList.remove('shadow')
+    }
+})
