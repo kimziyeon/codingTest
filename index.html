@@ -145,10 +145,70 @@
         <div class="inner">
             <p class="info_txt">모니터링 채널과 비교한 <span><b>항목지표 한눈에 보기</b></span></p>
             <div class="graph_list">
-                <div class="graph_box">그래프1</div>
-                <div class="graph_box">그래프2</div>
+
                 <div class="graph_box">
-                    <div class="box_title">가장 반응 좋은 시간대</div>
+                    <h3 class="box_title">나의 평균 참여도는?</h3>
+                    <div class="chart v01">
+                        <svg class="arc" viewBox="0 0 100 50">
+
+                            <!-- inner-shadow -->
+                            <defs>
+                                <filter id="inner-shadow" x="-50%" y="-50%" width="200%" height="200%">
+                                    <feComponentTransfer in="SourceAlpha">
+                                        <feFuncA type="table" tableValues="1 0" />
+                                    </feComponentTransfer>
+                                    <feGaussianBlur stdDeviation="3" />
+                                    <feOffset dx="0" dy="3" result="offsetblur" />
+                                    <feFlood flood-color="rgba(110, 156, 191, 0.16)" />
+                                    <feComposite in2="offsetblur" operator="in" />
+                                    <feComposite in2="SourceAlpha" operator="in" />
+                                    <feMerge>
+                                        <feMergeNode in="SourceGraphic" />
+                                        <feMergeNode />
+                                    </feMerge>
+                                </filter>
+                            </defs>
+                            <!-- inner-shadow -->
+
+                            <path class="arc-bar" d="M 10 45 A 50 50 0 0 1 90 45" />
+                            <path class="arc-inner" d="M 10 45 A 50 50 0 0 1 90 45" id="arc-inner" />
+                            <circle cx="26" cy="31" r="4" class="arc-dot back" />
+                            <circle cx="26" cy="31" r="2" class="arc-dot" />
+                        </svg>
+                        <div class="arc_level">
+                            <p class="txt a1">1<span>&Iota;</span></p>
+                            <p class="txt a2">2<span>&Iota;</span></p>
+                            <p class="txt a3">3<span>&Iota;</span></p>
+                            <p class="txt a4">4<span>&Iota;</span></p>
+                            <p class="txt a5">5<span>&Iota;</span></p>
+                        </div>
+                    </div>
+                    <div class="state_info">
+                        <span class="arr">
+                            <img src="./images/arr_down.svg" alt="아래 방향 아이콘">
+                        </span>
+                        <p class="txt">낮음</p>
+                    </div>
+                </div>
+
+                <div class="graph_box">
+                    <h3 class="box_title">효과가 높은 영상 길이</h3>
+                    <div class="chart_02">
+                        <!-- <img src="./images/chart_02.svg" class="aaaaaaaaaa"> -->
+                        <svg class="graph-svg" viewBox="0 0 100 50">
+
+                            <path class="graph_line" d="M 5 30 C 25 40, 25 40, 45 25 S 65 50, 95 36" />
+                            <circle class="graph_circle" />
+                        </svg>
+                    </div>
+
+                    <div class="state_info_02">
+                        <p class="txt"><b>4~7</b>분</p>
+                    </div>
+                </div>
+
+                <div class="graph_box">
+                    <h3 class="box_title">가장 반응 좋은 시간대</h3>
                     <div class="chart_03">
                         <div class="bar">
                             <div class="bar_inner" style="height: 30%;"></div>
@@ -201,14 +261,64 @@
 
 
                     </div>
-                    <div class="hot_info">
+                    <div class="state_info_03">
                         <span class="dot"></span>
                         <p class="time"><b>07:00</b>pm</p>
                     </div>
                 </div>
-                <div class="graph_box">그래프4</div>
-                <div class="graph_box">그래프5</div>
-                <div class="graph_box">그래프6</div>
+
+                <div class="graph_box">
+                    <h3 class="box_title">광고 콘텐츠 평균 개수</h3>
+                </div>
+
+                <div class="graph_box">
+                    <h3 class="box_title">평균 월 업로드 수</h3>
+                    <div class="chart v05">
+                        <svg class="arc" viewBox="0 0 100 50">
+
+                            <!-- inner-shadow -->
+                            <defs>
+                                <filter id="inner-shadow" x="-50%" y="-50%" width="200%" height="200%">
+                                    <feComponentTransfer in="SourceAlpha">
+                                        <feFuncA type="table" tableValues="1 0" />
+                                    </feComponentTransfer>
+                                    <feGaussianBlur stdDeviation="3" />
+                                    <feOffset dx="0" dy="3" result="offsetblur" />
+                                    <feFlood flood-color="rgba(110, 156, 191, 0.16)" />
+                                    <feComposite in2="offsetblur" operator="in" />
+                                    <feComposite in2="SourceAlpha" operator="in" />
+                                    <feMerge>
+                                        <feMergeNode in="SourceGraphic" />
+                                        <feMergeNode />
+                                    </feMerge>
+                                </filter>
+                            </defs>
+                            <!-- inner-shadow -->
+
+                            <path class="arc-bar" d="M 10 45 A 50 50 0 0 1 90 45" />
+                            <path class="arc-inner" d="M 10 45 A 50 50 0 0 1 90 45" id="arc-inner" />
+                            <circle cx="26" cy="31" r="4" class="arc-dot back" />
+                            <circle cx="26" cy="31" r="2" class="arc-dot" />
+                        </svg>
+                        <div class="arc_level">
+                            <p class="txt a1">1<span>&Iota;</span></p>
+                            <p class="txt a2">2<span>&Iota;</span></p>
+                            <p class="txt a3">3<span>&Iota;</span></p>
+                            <p class="txt a4">4<span>&Iota;</span></p>
+                            <p class="txt a5">5<span>&Iota;</span></p>
+                        </div>
+                    </div>
+                    <div class="state_info v05">
+                        <span class="arr">
+                            <img src="./images/arr_up.svg" alt="아래 방향 아이콘">
+                        </span>
+                        <p class="txt">높음</p>
+                    </div>
+                </div>
+
+                <div class="graph_box">
+                    <h3 class="box_title">많이 언급된 단어들</h3>
+                </div>
             </div>
         </div>
     </section>

@@ -508,40 +508,168 @@ header .lnb a.select {
     width: 100%;
     text-align: center;
     font-size: 15px;
-    font-weight: bold;
     position: absolute;
     top: 25px;
 }
 
-.graph .graph_list .graph_box .hot_info {
-    width: 80px;
-    height: 28px;
-    background: url(/images/hot_info.png) no-repeat;
+
+
+
+
+/* 차트1 차트1 차트1 차트1 차트1 차트1 차트1 차트1 차트1 차트1 차트1 */
+
+.graph .graph_list .graph_box .chart {
+    padding-top: 20px;
+}
+
+.graph .graph_list .graph_box .chart .arc {
+    fill: none;
+}
+
+.graph .graph_list .graph_box .chart .arc .arc-bar {
+    fill: none;
+    stroke-width: 5;
+    stroke: #EEEFF1;
+    stroke-linecap: round;
+    filter: url(#inner-shadow);
+}
+
+.graph .graph_list .graph_box .chart .arc .arc-inner {
+    display: block;
+    fill: none;
+    stroke-width: 3;
+    stroke: #FE607A;
+    stroke-linecap: round;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 180;
+
+}
+
+.graph .graph_list .graph_box .chart .arc .arc-dot {
+    fill: #FFFFFF;
+    stroke-width: 1;
+    stroke: #FE607A;
+
+}
+
+.graph .graph_list .graph_box .chart .arc .arc-dot.back {
+    fill: rgba(254, 96, 122, 38%);
+    stroke: none;
+}
+
+
+.graph .graph_list .graph_box .chart .arc_level {}
+
+.graph .graph_list .graph_box .chart .arc_level .txt {
+    color: #BFC6CC;
     position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(50%, -50%);
+    transform: translate(-50%, -50%);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap: 4px;
 }
 
-.graph .graph_list .graph_box .hot_info .dot {
-    width: 6px;
-    height: 6px;
-    background-color: #4185F9;
-    border-radius: 50%;
+.graph .graph_list .graph_box .chart .arc_level .txt>span {}
+
+.graph .graph_list .graph_box .chart .arc_level .txt.a1 {
+    top: 62%;
+    left: 8%;
+    transform: rotate(-40deg);
 }
 
-.graph .graph_list .graph_box .hot_info .time {
+.graph .graph_list .graph_box .chart .arc_level .txt.a2 {
+    top: 40%;
+    left: 26%;
+    transform: rotate(-30deg);
+
+}
+
+.graph .graph_list .graph_box .chart .arc_level .txt.a3 {
+    top: 41%;
+    left: 50%;
+}
+
+.graph .graph_list .graph_box .chart .arc_level .txt.a4 {
+    top: 40%;
+    right: 26%;
+    transform: rotate(30deg);
+}
+
+.graph .graph_list .graph_box .chart .arc_level .txt.a5 {
+    top: 62%;
+    right: 8%;
+    transform: rotate(40deg);
+
+}
+
+.graph .graph_list .graph_box .state_info {
+    width: 88px;
+    height: 40px;
+    background: linear-gradient(to bottom, #FE607A 0%, #FF3C6A 100%);
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 10%;
+    left: 50%;
+}
+
+.graph .graph_list .graph_box .state_info .arr {}
+
+.graph .graph_list .graph_box .state_info .txt {
     color: #fff;
-    font-size: 11px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.graph .graph_list .graph_box .chart_01 {}
+
+
+
+
+/* 차트2 차트2 차트2 차트2 차트2 차트2 차트2 차트2 차트2 차트2  */
 
 .graph .graph_list .graph_box .chart_02 {}
+
+.graph .graph_list .graph_box .chart_02 .graph-svg {
+    border-bottom: 1px dashed #D2D7DF;
+}
+
+.graph .graph_list .graph_box .chart_02 .graph-svg .graph_line {
+    fill: none;
+    stroke-width: 0.5;
+    stroke: #1ECF94;
+    margin-top: 40px;
+}
+
+.graph .graph_list .graph_box .state_info_02 {
+    width: 74px;
+    height: 34px;
+    background: linear-gradient(to left, #1ECF94 0%, #40DA64 100%);
+    border-radius: 10px 10px 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    transform: translate(50%, -50%);
+    top: 36%;
+    right: 30%;
+}
+
+.graph .graph_list .graph_box .state_info_02 .txt {
+    color: #fff;
+    font-size: 17px;
+}
+
+
+
+
+
+
+/* 차트3 차트3 차트3 차트3 차트3 차트3 차트3 차트3 차트3 차트3  */
 
 .graph .graph_list .graph_box .chart_03 {
     display: flex;
@@ -600,9 +728,76 @@ header .lnb a.select {
     font-weight: bold;
 }
 
+.graph .graph_list .graph_box .state_info_03 {
+    width: 80px;
+    height: 28px;
+    background: url(/images/state_info_03.png) no-repeat;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    z-index: 5;
+}
+
+.graph .graph_list .graph_box .state_info_03 .dot {
+    width: 6px;
+    height: 6px;
+    background-color: #4185F9;
+    border-radius: 50%;
+}
+
+.graph .graph_list .graph_box .state_info_03 .time {
+    color: #fff;
+    font-size: 11px;
+}
+
+
+
+
+
+/* 차트4 차트4 차트4 차트4 차트4 차트4 차트4 차트4 차트4 차트4 차트4  */
+
 .graph .graph_list .graph_box .chart_04 {}
 
-.graph .graph_list .graph_box .chart_05 {}
+
+
+
+
+
+
+/* 차트5 차트5 차트5 차트5 차트5 차트5 차트5 차트5 차트5 차트5 차트5  */
+
+
+.graph .graph_list .graph_box .chart.v05 .arc .arc-inner {
+    stroke: #459AF6;
+}
+
+.graph .graph_list .graph_box .chart.v05 .arc .arc-dot {
+    stroke: #459AF6;
+
+}
+
+.graph .graph_list .graph_box .chart.v05 .arc .arc-dot.back {
+    fill: rgba(69, 154, 246, 40%);
+    stroke: none;
+
+}
+
+
+.graph .graph_list .graph_box .state_info.v05 {
+    background: linear-gradient(to bottom, #489FF7 0%, #2D76F1 100%);
+}
+
+
+
+
+
+
+/* 차트6 차트6 차트6 차트6 차트6 차트6 차트6 차트6 차트6 차트6 차트6  */
 
 .graph .graph_list .graph_box .chart_06 {}
 
