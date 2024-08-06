@@ -1,6 +1,18 @@
 const basePath = window.location.hostname === 'http://172.30.1.78:5500/' ? '' : 'https://kimziyeon.github.io/codingTest/';
 
 
+//헤더 스크롤 shadow
+window.addEventListener('scroll', () => {
+    const category = document.querySelector('.category');
+
+    if (window.scrollY > 0) {
+        category.classList.add('shadow')
+    } else {
+        category.classList.remove('shadow')
+    }
+})
+
+
 //json "ch_list" 첫번째 패치
 
 fetch(`${basePath}/data/data.json`)
@@ -146,13 +158,3 @@ moreBtn.addEventListener('click', () => {
     hideSection.style.display = 'block'
 })
 
-
-//헤더 스크롤 shadow
-window.addEventListener('scroll', () => {
-    const category = document.querySelector('.category');
-    if (window.scrollY > 0) {
-        category.classList.add('shadow')
-    } else {
-        category.classList.remove('shadow')
-    }
-})

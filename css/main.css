@@ -206,6 +206,7 @@ header .lnb a.select {
 .category .inner {
     display: flex;
     align-items: center;
+    justify-content: space-around;
 
 }
 
@@ -500,7 +501,124 @@ header .lnb a.select {
     box-shadow: 0 3px 12px rgba(149, 166, 182, 12%);
     border-radius: 3px;
     cursor: pointer;
+    position: relative;
 }
+
+.graph .graph_list .graph_box .box_title {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    top: 25px;
+}
+
+.graph .graph_list .graph_box .hot_info {
+    width: 80px;
+    height: 28px;
+    background: url(/images/hot_info.png) no-repeat;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.graph .graph_list .graph_box .hot_info .dot {
+    width: 6px;
+    height: 6px;
+    background-color: #4185F9;
+    border-radius: 50%;
+}
+
+.graph .graph_list .graph_box .hot_info .time {
+    color: #fff;
+    font-size: 11px;
+}
+
+.graph .graph_list .graph_box .chart_01 {}
+
+.graph .graph_list .graph_box .chart_02 {}
+
+.graph .graph_list .graph_box .chart_03 {
+    display: flex;
+    width: 90%;
+    height: 85%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.graph .graph_list .graph_box .chart_03 .bar {
+    width: 12px;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: relative;
+    border-radius: 2px;
+}
+
+.graph .graph_list .graph_box .chart_03 .bar .bar_inner {
+    background-color: #7EBBFE;
+    width: 100%;
+    position: relative;
+    margin-bottom: 8px;
+
+}
+
+.graph .graph_list .graph_box .chart_03 .bar .bar_inner.top {
+    background: linear-gradient(to bottom, #2B74F1 0%, #77C0FF 100%);
+
+}
+
+.graph .graph_list .graph_box .chart_03 .bar .bar_inner.top::after {
+    content: '';
+    width: 20px;
+    height: 100%;
+    background-color: #D2E3FF;
+    position: absolute;
+    bottom: -4px;
+    transform: translateX(-50%);
+    padding: 4px 0;
+    z-index: -1;
+    border-radius: 2px;
+    box-shadow: 0 3px 10px rgba(142, 153, 180, 33%);
+
+}
+
+.graph .graph_list .graph_box .chart_03 .bar .num {
+    position: absolute;
+    bottom: -20px;
+    color: #BFC6CC;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.graph .graph_list .graph_box .chart_04 {}
+
+.graph .graph_list .graph_box .chart_05 {}
+
+.graph .graph_list .graph_box .chart_06 {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
