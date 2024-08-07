@@ -1,6 +1,9 @@
 @charset "UTF-8";
 @import url(../css/reset.css);
 
+body {
+    overflow-x: hidden;
+}
 
 .inner {
     max-width: 1080px;
