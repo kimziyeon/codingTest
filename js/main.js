@@ -170,13 +170,4 @@ moreBtn.addEventListener('click', () => {
     hideSection.style.display = 'block'
 })
 
-// 4번 그래프 그리드
-const gridBox = document.querySelector('.chart_04 .grid_box');
-
-for (let col = 1; col >= 12; col++) {
-    let gridItem = document.createElement('div')
-    gridItem.classList.add('grid_item');
-    gridItem.style.gridColumn = col;
-    gridItem.style.gridRow = row;
-}
 
