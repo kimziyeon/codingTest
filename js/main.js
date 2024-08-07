@@ -12,6 +12,18 @@ window.addEventListener('scroll', () => {
     }
 })
 
+//채널 변경
+const chListEls = document.querySelector('.category .my_ch .img_box');
+chListEls.addEventListener('click', () => {
+    let chChange = document.querySelector('.ch_change');
+    if (chChange.style.display === 'flex') {
+        chChange.style.display = 'none'
+    } else {
+        chChange.style.display = 'flex'
+    }
+})
+
+
 
 //json "ch_list" 첫번째 패치
 
@@ -157,4 +169,14 @@ moreBtn.addEventListener('click', () => {
     let hideSection = document.querySelector('.hide');
     hideSection.style.display = 'block'
 })
+
+// 4번 그래프 그리드
+const gridBox = document.querySelector('.chart_04 .grid_box');
+
+for (let col = 1; col >= 12; col++) {
+    let gridItem = document.createElement('div')
+    gridItem.classList.add('grid_item');
+    gridItem.style.gridColumn = col;
+    gridItem.style.gridRow = row;
+}
 
