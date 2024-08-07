@@ -130,9 +130,6 @@ header .gnb .gnb_center .ch_search img {
     cursor: pointer;
 }
 
-
-
-
 header .gnb .gnb_center .ch_board {
     font-size: 17px;
     font-weight: bold;
@@ -148,9 +145,6 @@ header .gnb .gnb_center .ch_board .ch_board_01 {
     color: #2EA1D0;
     gap: 6px;
 }
-
-header .gnb .gnb_center .ch_board .ch_board_02 {}
-
 
 
 header .gnb .gnb_sub {
@@ -186,6 +180,20 @@ header .lnb a.select {
     color: #fff;
     font-weight: bold;
 }
+
+@media (max-width: 1300px) {
+    header .gnb .logo {
+        display: none;
+    }
+
+    header .gnb .gnb_center {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+}
+
+
+
 
 
 /* category category category category category category */
@@ -370,6 +378,7 @@ header .lnb a.select {
 
 
 
+
 /* ranking ranking ranking ranking ranking ranking ranking  */
 
 .ranking {
@@ -400,6 +409,7 @@ header .lnb a.select {
 .ranking .inner .banner .txt_box span {
     color: #FF3C6F;
 }
+
 
 
 
@@ -495,6 +505,7 @@ header .lnb a.select {
 
 
 
+
 /* graph graph graph graph graph graph graph graph graph graph  */
 
 .graph {
@@ -541,7 +552,7 @@ header .lnb a.select {
 
 
 
-/* 차트1 차트1 차트1 차트1 차트1 차트1 차트1 차트1 차트1 차트1 차트1 */
+/* graph 차트1 차트1 차트1 차트1 차트1 차트1 차트1 차트1 차트1 차트1 차트1 */
 
 .graph .graph_list .graph_box .chart {
     padding-top: 20px;
@@ -583,8 +594,6 @@ header .lnb a.select {
 }
 
 
-.graph .graph_list .graph_box .chart .arc_level {}
-
 .graph .graph_list .graph_box .chart .arc_level .txt {
     color: #BFC6CC;
     position: absolute;
@@ -594,7 +603,6 @@ header .lnb a.select {
     align-items: center;
 }
 
-.graph .graph_list .graph_box .chart .arc_level .txt>span {}
 
 .graph .graph_list .graph_box .chart .arc_level .txt.a1 {
     top: 62%;
@@ -642,7 +650,6 @@ header .lnb a.select {
     left: 50%;
 }
 
-.graph .graph_list .graph_box .state_info .arr {}
 
 .graph .graph_list .graph_box .state_info .txt {
     color: #fff;
@@ -654,7 +661,7 @@ header .lnb a.select {
 
 
 
-/* 차트2 차트2 차트2 차트2 차트2 차트2 차트2 차트2 차트2 차트2  */
+/* graph 차트2 차트2 차트2 차트2 차트2 차트2 차트2 차트2 차트2 차트2  */
 
 .graph .graph_list .graph_box .chart_02 {
     padding-top: 20px;
@@ -711,9 +718,7 @@ header .lnb a.select {
 
 
 
-
-
-/* 차트3 차트3 차트3 차트3 차트3 차트3 차트3 차트3 차트3 차트3  */
+/* graph 차트3 차트3 차트3 차트3 차트3 차트3 차트3 차트3 차트3 차트3  */
 
 .graph .graph_list .graph_box .chart_03 {
     display: flex;
@@ -811,7 +816,7 @@ header .lnb a.select {
 
 
 
-/* 차트4 차트4 차트4 차트4 차트4 차트4 차트4 차트4 차트4 차트4 차트4  */
+/* graph 차트4 차트4 차트4 차트4 차트4 차트4 차트4 차트4 차트4 차트4 차트4  */
 
 .graph .graph_list .graph_box .chart_04 {
     width: 90%;
@@ -853,7 +858,7 @@ header .lnb a.select {
 
 
 
-/* 차트5 차트5 차트5 차트5 차트5 차트5 차트5 차트5 차트5 차트5 차트5  */
+/* graph 차트5 차트5 차트5 차트5 차트5 차트5 차트5 차트5 차트5 차트5 차트5  */
 
 .graph .graph_list .graph_box .chart.v05 .arc .arc-inner {
     stroke: #459AF6;
@@ -882,7 +887,7 @@ header .lnb a.select {
 
 
 
-/* 차트6 차트6 차트6 차트6 차트6 차트6 차트6 차트6 차트6 차트6 차트6  */
+/* graph 차트6 차트6 차트6 차트6 차트6 차트6 차트6 차트6 차트6 차트6 차트6  */
 
 .graph .graph_list .graph_box .chart_06 {
     height: 100%;
@@ -939,20 +944,6 @@ header .lnb a.select {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* video video video video video video video video video  */
 
 .video {
@@ -998,13 +989,10 @@ header .lnb a.select {
     display: inline-block;
 }
 
-.video .video_list .video_box .video_info .view_num>span {}
 
 .video .video_list .video_box .video_info .dot {
     color: #D6DEE6;
 }
-
-.video .video_list .video_box .video_info .up_date {}
 
 
 
@@ -1055,9 +1043,6 @@ header .lnb a.select {
 }
 
 
-
-.shorts_list .shorts_box .ch_name {}
-
 .shorts_list .shorts_box .shorts_name {
     height: 50px;
     color: #fff;
@@ -1067,9 +1052,6 @@ header .lnb a.select {
     z-index: 3;
     font-weight: bold;
 }
-
-
-
 
 .hide {
     display: none;
@@ -1104,14 +1086,6 @@ header .lnb a.select {
     cursor: pointer;
 }
 
-.more .more_box .more_btn span {}
-
-.more .more_box .more_btn {}
-
-
-
-
-footer {}
 
 footer .copy {
     text-align: center;
