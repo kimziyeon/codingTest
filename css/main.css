@@ -750,26 +750,33 @@ header .lnb a.select {
 .graph .graph_list .graph_box .state_info_03 {
     width: 80px;
     height: 28px;
-    background: url(/images/state_info_03.svg) no-repeat;
     position: absolute;
     top: 35%;
     left: 50%;
     transform: translate(50%, -50%);
+    z-index: 3;
+}
+
+.graph .graph_list .graph_box .state_info_03 .info_txt {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    z-index: 5;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4px;
-    z-index: 5;
+
 }
 
-.graph .graph_list .graph_box .state_info_03 .dot {
+.graph .graph_list .graph_box .state_info_03 .info_txt .dot {
     width: 6px;
     height: 6px;
     background-color: #4185F9;
     border-radius: 50%;
 }
 
-.graph .graph_list .graph_box .state_info_03 .time {
+.graph .graph_list .graph_box .state_info_03 .info_txt .time {
     color: #fff;
     font-size: 11px;
 }
