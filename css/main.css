@@ -449,7 +449,9 @@ header .lnb a.select {
 .rate .rate_ch_list {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-items: flex-start;
+    gap: 16px;
 }
 
 .rate .rate_ch_list .ch_box {
