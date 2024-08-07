@@ -194,11 +194,24 @@
                 <div class="graph_box">
                     <h3 class="box_title">효과가 높은 영상 길이</h3>
                     <div class="chart_02">
-                        <!-- <img src="./images/chart_02.svg" class="aaaaaaaaaa"> -->
                         <svg class="graph-svg" viewBox="0 0 100 50">
-
                             <path class="graph_line" d="M 5 30 C 25 40, 25 40, 45 25 S 65 50, 95 36" />
-                            <circle class="graph_circle" />
+                            <path class="graph_back" d="M 5 30 C 25 40, 25 40, 45 25 S 65 50, 95 36 L 95 50 L 5 50 Z" />
+
+                            <!-- Gradient -->
+                            <linearGradient id="graph_gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" stop-color="rgba(51, 215, 160, 24%)"></stop>
+                                <stop offset="100%" stop-color="rgba(117,238,210,4%)"></stop>
+                            </linearGradient>
+                            <!-- Gradient -->
+
+                            <circle cx="10" cy="32.5" r="1" class="graph-dot" />
+                            <circle cx="27" cy="36.5" r="1" class="graph-dot" />
+                            <circle cx="41" cy="28" r="1" class="graph-dot" />
+                            <circle cx="56" cy="22" r="1" class="graph-dot fill" />
+                            <circle cx="70" cy="34" r="1" class="graph-dot" />
+                            <circle cx="90" cy="38" r="1" class="graph-dot" />
+
                         </svg>
                     </div>
 
@@ -297,8 +310,8 @@
 
                             <path class="arc-bar" d="M 10 45 A 50 50 0 0 1 90 45" />
                             <path class="arc-inner" d="M 10 45 A 50 50 0 0 1 90 45" id="arc-inner" />
-                            <circle cx="26" cy="31" r="4" class="arc-dot back" />
-                            <circle cx="26" cy="31" r="2" class="arc-dot" />
+                            <circle cx="72" cy="30" r="4" class="arc-dot back" />
+                            <circle cx="72" cy="30" r="2" class="arc-dot" />
                         </svg>
                         <div class="arc_level">
                             <p class="txt a1">1<span>&Iota;</span></p>
@@ -318,6 +331,39 @@
 
                 <div class="graph_box">
                     <h3 class="box_title">많이 언급된 단어들</h3>
+                    <div class="chart_06">
+
+                        <div class="bar_box">
+                            <div class="bar">
+                                <div class="bar_inner" style="width: 60%;"></div>
+                            </div>
+                            <div class="state_info_06">
+                                <img src="./images/state_info_06_01.svg" alt="첫번째 말풍선 상태 아이콘">
+                                <p>햄최몇</p>
+                            </div>
+                        </div>
+
+                        <div class="bar_box">
+                            <div class="bar">
+                                <div class="bar_inner" style="width: 95%;"></div>
+                            </div>
+                            <div class="state_info_06" style="left: 50%;">
+                                <img src="./images/state_info_06_02.svg" alt="두번째 말풍선 상태 아이콘">
+                                <p>배불리배불리</p>
+                            </div>
+                        </div>
+
+                        <div class="bar_box">
+                            <div class="bar">
+                                <div class="bar_inner" style="width: 60%;"></div>
+                            </div>
+                            <div class="state_info_06">
+                                <img src="./images/state_info_06_01.svg" alt="세번째 말풍선 상태 아이콘">
+                                <p>스타또</p>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>

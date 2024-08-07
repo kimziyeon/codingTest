@@ -631,7 +631,9 @@ header .lnb a.select {
 
 /* 차트2 차트2 차트2 차트2 차트2 차트2 차트2 차트2 차트2 차트2  */
 
-.graph .graph_list .graph_box .chart_02 {}
+.graph .graph_list .graph_box .chart_02 {
+    padding-top: 20px;
+}
 
 .graph .graph_list .graph_box .chart_02 .graph-svg {
     border-bottom: 1px dashed #D2D7DF;
@@ -642,6 +644,22 @@ header .lnb a.select {
     stroke-width: 0.5;
     stroke: #1ECF94;
     margin-top: 40px;
+}
+
+.graph .graph_list .graph_box .chart_02 .graph-svg .graph_back {
+    fill: url(#graph_gradient);
+    stroke: none;
+}
+
+.graph .graph_list .graph_box .chart_02 .graph-svg .graph-dot {
+    fill: #fff;
+    stroke-width: 0.6;
+    stroke: #1ECF94;
+}
+
+.graph .graph_list .graph_box .chart_02 .graph-svg .graph-dot.fill {
+    stroke: none;
+    fill: #1ECF94;
 }
 
 .graph .graph_list .graph_box .state_info_02 {
@@ -657,6 +675,7 @@ header .lnb a.select {
     transform: translate(50%, -50%);
     top: 36%;
     right: 30%;
+    box-shadow: 0 3px 6px rgba(74, 127, 175, 20%);
 }
 
 .graph .graph_list .graph_box .state_info_02 .txt {
@@ -731,7 +750,7 @@ header .lnb a.select {
 .graph .graph_list .graph_box .state_info_03 {
     width: 80px;
     height: 28px;
-    background: url(/images/state_info_03.png) no-repeat;
+    background: url(/images/state_info_03.svg) no-repeat;
     position: absolute;
     top: 35%;
     left: 50%;
@@ -771,9 +790,10 @@ header .lnb a.select {
 
 /* 차트5 차트5 차트5 차트5 차트5 차트5 차트5 차트5 차트5 차트5 차트5  */
 
-
 .graph .graph_list .graph_box .chart.v05 .arc .arc-inner {
     stroke: #459AF6;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 132;
 }
 
 .graph .graph_list .graph_box .chart.v05 .arc .arc-dot {
@@ -799,7 +819,57 @@ header .lnb a.select {
 
 /* 차트6 차트6 차트6 차트6 차트6 차트6 차트6 차트6 차트6 차트6 차트6  */
 
-.graph .graph_list .graph_box .chart_06 {}
+.graph .graph_list .graph_box .chart_06 {
+    height: 100%;
+    padding-top: 60px;
+}
+
+.graph .graph_list .graph_box .chart_06 .bar_box {
+    padding-top: 30px;
+    position: relative;
+}
+
+
+.graph .graph_list .graph_box .chart_06 .bar_box .bar {
+    width: 90%;
+    height: 12px;
+    background-color: #F1F4F8;
+    margin: 0 auto;
+    border-radius: 6px;
+    box-shadow: inset 0 3px 6px rgba(166, 206, 230, 16%);
+    padding: 0 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.graph .graph_list .graph_box .chart_06 .bar_box .bar .bar_inner {
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(to right, #3DD967 0%, #20D092 100%);
+    border-radius: 4px;
+}
+
+.graph .graph_list .graph_box .chart_06 .bar_box .state_info_06 {
+    position: absolute;
+    transform: translate(50%, -50%);
+    top: 50%;
+    left: 30%;
+    text-align: center;
+}
+
+.graph .graph_list .graph_box .chart_06 .bar_box .state_info_06>p {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 50%;
+    width: 100%;
+    color: #74A0A7;
+    font-size: 13px;
+}
+
 
 
 
