@@ -694,6 +694,11 @@ header .lnb a.select {
     fill: #1ECF94;
 }
 
+.graph .graph_list .graph_box .chart_02 .graph-svg .graph-dot.back {
+    stroke: none;
+    fill: rgba(30, 207, 148, 30%);
+}
+
 .graph .graph_list .graph_box .state_info_02 {
     width: 74px;
     height: 34px;
